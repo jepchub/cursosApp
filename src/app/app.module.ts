@@ -1,6 +1,7 @@
 // modulos de funcionalidades extras
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 // componentes a utilizar en nuestra aplicasion
 // cualquier otro tipo de archivos que necesitemos, servicios, directivas, pipes
@@ -26,7 +27,8 @@ import { AcercaDeNosotrosComponent } from './views/acerca-de-nosotros/acerca-de-
   imports: [
     // modulos que añaden funcionalidad a nuestra app
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   // añadiremos nuestros servicios a ocupar
   providers: [],
